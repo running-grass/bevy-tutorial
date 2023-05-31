@@ -53,6 +53,10 @@ const config = {
             },
           },
         },
+        gtag: {
+          trackingID: 'G-7MSJTCV271',
+          anonymizeIP: false,
+        },
         blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -64,34 +68,29 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      // image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Bevy 教程',
         items: [
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: '教程',
+          },
           {
             type: 'docsVersionDropdown',
             position: 'right',
           },
         ],
-        //   {
-        //     type: 'docSidebar',
-        //     sidebarId: 'tutorialSidebar',
-        //     position: 'left',
-        //     label: 'Tutorial',
-        //   },
-        //   {to: '/blog', label: 'Blog', position: 'left'},
-        //   {
-        //     href: 'https://github.com/facebook/docusaurus',
-        //     label: 'GitHub',
-        //     position: 'right',
-        //   },
-        // ],
       },
       // foote
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      footer: {
+        style: 'dark',
+        copyright: "此网站使用 Docusaurus 构建",
       },
     }),
 };
