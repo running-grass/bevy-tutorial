@@ -1,0 +1,8 @@
+{
+  "label": "快速上手",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "通过一些简单的例子，快速了解 Bevy 的基本用法。"
+  }
+}
